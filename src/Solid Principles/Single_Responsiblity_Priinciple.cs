@@ -8,10 +8,10 @@ namespace SolidPrinciples
 {
     class Marker
     {
-        int price;
-        string color;
+        public int price;
+        public string color;
 
-        Marker(int price, string color)
+        public Marker(int price, string color)
         {
             this.price = price;
             this.color = color;
@@ -24,11 +24,11 @@ namespace SolidPrinciples
 
     }
 
-    class Invoice
+    class InvoiceBeforeSrp
     {
         Marker marker;
         int Quantity;
-        Invoice(Marker marker, int quantity)
+        public InvoiceBeforeSrp(Marker marker, int quantity)
         {
             this.marker = marker;
             this.Quantity = quantity;
@@ -57,7 +57,7 @@ namespace SolidPrinciples
     {
         Marker marker;
         int Quantity;
-        Invoice(Marker marker, int quantity)
+        public Invoice(Marker marker, int quantity)
         {
             this.marker = marker;
             this.Quantity = quantity;
@@ -73,7 +73,7 @@ namespace SolidPrinciples
     class InvoicePrinter
     {
         Invoice invoice;
-        InvoicePrinter(Invoice invoice)
+        public InvoicePrinter(Invoice invoice)
         {
             this.invoice = invoice;
         }
@@ -83,9 +83,9 @@ namespace SolidPrinciples
         }
     }
 
-    class Inoicedac {      
+    class Inoicedac {
         Invoice invoice;
-        Inoicedac(Invoice invoice)
+        public Inoicedac(Invoice invoice)
         {
             this.invoice = invoice;
         }
