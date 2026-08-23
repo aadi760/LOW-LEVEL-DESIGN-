@@ -21,6 +21,6 @@ Low Level Design problems, SOLID principles, and design patterns, solved in C#.
 
 ### Behavioral Patterns
 
-| Pattern | Folder | Status |
+| Pattern | Folder | Example |
 |---|---|---|
-| Strategy | [Behavioral_Design_Patterns/StrategyDesignPattern/](src/Common_Design_Patterns/Behavioral_Design_Patterns/StrategyDesignPattern/) | 🚧 Scaffolded (`WithoutStrategyDesignPattern.cs`, `WithStrategyDesignPattern.cs`) — implementation pending |
+| Strategy | [Behavioral_Design_Patterns/StrategyDesignPattern/](src/Common_Design_Patterns/Behavioral_Design_Patterns/StrategyDesignPattern/) | Vehicles hard-coded their own `Engine()` per subclass, duplicating code and forcing the base `vehicle` class to change for every new variant. Fixed by extracting an `IEngine` interface (`PassengerEngine`, `SportsEngine`) that `Vehicle` holds by composition, so new vehicle/engine combinations (`PassengerVehicle`, `SportsVehicle`, `offroadVehicle`) plug in without modifying `Vehicle`. |
