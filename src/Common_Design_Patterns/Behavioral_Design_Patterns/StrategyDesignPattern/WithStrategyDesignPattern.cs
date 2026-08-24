@@ -91,8 +91,6 @@ public class Program
 // this is correct implementation of strategy design pattern where we are encapsulating
 // the family of interchangble algorithms behind
 // the common interface and allowing the behaviour to be decided at runtime without modifiying the context
-
-
 //              IEngine
 //                 │
 //       ┌─────────┼─────────┐
