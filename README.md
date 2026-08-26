@@ -25,3 +25,9 @@ Low Level Design problems, SOLID principles, and design patterns, solved in C#.
 |---|---|---|
 | Strategy | [Behavioral_Design_Patterns/StrategyDesignPattern/](src/Common_Design_Patterns/Behavioral_Design_Patterns/StrategyDesignPattern/) | Vehicles hard-coded their own `Engine()` per subclass, duplicating code and forcing the base `vehicle` class to change for every new variant. Fixed by extracting an `IEngine` interface (`PassengerEngine`, `SportsEngine`) that `Vehicle` holds by composition, so new vehicle/engine combinations (`PassengerVehicle`, `SportsVehicle`, `offroadVehicle`) plug in without modifying `Vehicle`. |
 | Observer | [Behavioral_Design_Patterns/ObserverDesignPattern/](src/Common_Design_Patterns/Behavioral_Design_Patterns/ObserverDesignPattern/) | Models the "notify me when back in stock" use case: `IStockObervable` (`IphoneStock`) keeps a list of `INotificationObserver`s and calls `NotifyObservers()` whenever stock changes, so subjects and observers (e.g. `NotificationEmailObserver`) stay decoupled and new observer types can register without changing the subject. |
+
+### Structural Patterns
+
+| Pattern | Folder | Example |
+|---|---|---|
+| Decorator | [Structural_Design_Patterns/DecoratorDesignPattern/](src/Common_Design_Patterns/Structural_Design_Patterns/DecoratorDesignPattern/) | Models a coffee shop where a base beverage (`Espresso`, `HouseBlend`) is wrapped in `BeverageDecorator` add-ons (`MilkDecorator`, `SugarDecorator`, `WhipDecorator`), each adding its own cost and description, so add-ons can be combined in any order/count without a new subclass per combination. |
