@@ -31,3 +31,9 @@ Low Level Design problems, SOLID principles, and design patterns, solved in C#.
 | Pattern | Folder | Example |
 |---|---|---|
 | Decorator | [Structural_Design_Patterns/DecoratorDesignPattern/](src/Common_Design_Patterns/Structural_Design_Patterns/DecoratorDesignPattern/) | Models a coffee shop where a base beverage (`Espresso`, `HouseBlend`) is wrapped in `BeverageDecorator` add-ons (`MilkDecorator`, `SugarDecorator`, `WhipDecorator`), each adding its own cost and description, so add-ons can be combined in any order/count without a new subclass per combination. |
+
+### Creational Patterns
+
+| Pattern | Folder | Example |
+|---|---|---|
+| Factory | [Creational_Design_Patterns/FactoryDesignPattern/](src/Common_Design_Patterns/Creational_Design_Patterns/FactoryDesignPattern/) | Provides an interface for creating objects in a superclass while letting subclasses decide which concrete type to instantiate, so client code can create objects without depending on their exact class (scaffolded — implementation in progress). |
